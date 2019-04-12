@@ -70,6 +70,10 @@ void printDecimal(FILE *fl, unsigned long filesize)
     for(int i = 1; i <= filesize; i++)
     {
         fread(&byte, 1, 1, fl);
+        if(byte < 10)
+            printf("00");
+        else if(byte > 9 && byte < 100)
+            printf("0");
         printf("%d\t", byte);
         if(i % 10 == 0)
         {    
