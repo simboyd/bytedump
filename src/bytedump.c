@@ -13,7 +13,10 @@ int main(int argc, char *argv[])
 {
     if(argc != 3)
     {
-        printf("Usage: bytedump [filename] [--option]\n\tOptions:\n\t\t--bin = print bytes in binary\n\t\t--dec = print bytes in decimal\n\t\t--hex = print bytes in hexadecimal\n");
+        printf("%s%s%s, 
+               "Usage: bytedump [filename] [--option]\n\tOptions:\n\t\t",
+               "--bin = print bytes in binary\n\t\t--dec = print bytes in decimal",
+               "\n\t\t--hex = print bytes in hexadecimal\n");
         exit(-1);
     }
 
