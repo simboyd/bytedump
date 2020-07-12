@@ -41,9 +41,11 @@ int main(int argc, char *argv[])
     else
     {
         printf("Incorrect usage. Third argument should either be --bin, --hex or --dec.\n");
+        fclose(fl);
         exit(-51);
     }
     printf("\nTotal filesize: %d byte(s)", filesize);
+    fclose(fl);
     return 0;
 }
 
