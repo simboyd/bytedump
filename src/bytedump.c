@@ -1,4 +1,4 @@
-// it's like xxd, but more retarded
+// it's like xxd, but dumber and worse
 // by @simboyd
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ int main(int argc, char* argv[])
     }
 
     FILE* fl; 
-    fopen_s(&fl, "e.txt", "rb");
+    fopen_s(&fl, argv[1], "rb");
     if (!fl)
     {
         printf("Error opening the file. Does it exist?\n");
